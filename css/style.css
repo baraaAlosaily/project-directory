@@ -152,6 +152,7 @@ h2 {
 .top ol li {
   display: inline;
   padding: 20px;
+  text-decoration: dotted;
 }
 .top p {
   padding-top: 20px;

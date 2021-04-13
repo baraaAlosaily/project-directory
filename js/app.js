@@ -11,12 +11,12 @@ alert('welcome Greeting Mr./Ms. ' + whatName);
 
 
 function answer1() {
-  let spOrt = prompt('Did you like sport?','yes or no. y or no').toLowerCase();
-  if (spOrt=== 'yes'||spOrt==='y') {
-    alert('Yes, so Thats Great keep going');
-    // console.log('Yes, so Thats Great keep going');
-  } else if (spOrt=== 'no'||spOrt==='n') {
-    alert('No, so You have to choose at lease one kind of sport to practice every day');
+  let sport = prompt('Did you like sport?','Please enter YES or NO').toLowerCase();
+  if (sport=== 'yes'||sport==='y') {
+    alert('Yes, Thats Great keep going');
+    // console.log('Ye Thats Great keep going');
+  } else if (sport=== 'no'||sport==='n') {
+    alert('No, You have to choose at lease one kind of sport to practice every day');
     // console.log('No, so You have to choose at lease one kind of sport to practice every day');
   }
   else {
