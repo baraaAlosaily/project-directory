@@ -9,7 +9,7 @@ alert('welcome Greeting Mr./Ms. ' + whatName);
 
 
 function answer1() {
-  let spOrt = prompt('Did you like sport?','yes or no').toLowerCase();
+  let spOrt = prompt('Did you like sport?','yes or no. y or no').toLowerCase();
   if (spOrt=== 'yes'||spOrt==='y') {
     alert('Yes, so Thats Great keep going');
     // console.log('Yes, so Thats Great keep going');
@@ -24,12 +24,12 @@ function answer1() {
 answer1();
 
 function answer2() {
-  let manSaf = prompt('Did you like Mansaf?').toLowerCase();
+  let manSaf = prompt('Did you like Mansaf?','yes or no. y or no').toLowerCase();
   if (manSaf === 'yes'||manSaf==='y') {
     alert('Yes, so You are original Jordanian');
     // console.log('Yes, so You are original Jordanian');
   }else if (manSaf==='no'||manSaf==='n') {
-    alert('No, so you have to try it is so delicios');
+    alert('No, so you have to try it is so delicios','yes or no. y or no');
     // console.log('No, so you have to try it is so delicios');
   }
   else{
@@ -39,7 +39,7 @@ function answer2() {
 answer2();
 
 function answer3() {
-  let coDing = prompt('Did you like coding?').toLowerCase();
+  let coDing = prompt('Did you like coding?','yes or no. y or no').toLowerCase();
   if (coDing === 'yes'||coDing==='y') {
     alert('Yes, so Great and i do');
     // console.log('Yes, so Great and i do');
@@ -54,7 +54,7 @@ function answer3() {
 answer3();
 
 function answer4() {
-  let reaDing = prompt('Did you like reading books?').toLowerCase();
+  let reaDing = prompt('Did you like reading books?','yes or no. y or no').toLowerCase();
   if (reaDing === 'yes'||reaDing==='y') {
     alert('Yes, so Thats Great keep going');
     // console.log('Yes, so Thats Great keep going');
@@ -69,7 +69,7 @@ function answer4() {
 answer4();
 
 function answer5() {
-  let coFfee = prompt('Did you like drink coffee?').toLowerCase();
+  let coFfee = prompt('Did you like drink coffee?','yes or no. y or no').toLowerCase();
   if (coFfee === 'yes'||coFfee==='y') {
     alert('Yes, so I think i is not good but i do to wakeup');
     // console.log('Yes, so I think i is not good but i do to wakeup');
