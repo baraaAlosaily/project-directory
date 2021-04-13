@@ -1,5 +1,7 @@
+/* eslint-disable no-constant-condition */
 'use strict';
 
+let points=0;
 alert('Welcome to My Wesite');
 // console.log('Welcome to My Wesite');
 
@@ -85,3 +87,67 @@ answer5();
 
 
 
+
+
+let question= ['Ok' + whatName +'lets play guess game guess my age', 'Ok'+whatName+'let us play another game guess the main country in Jordan '];
+guessNumber();
+guessCounrty();
+finalResult();
+
+function guessNumber(){
+  const myNum=24;
+  let guessCorrect=false;
+  let guessNum=prompt(question[0]);
+  for(let i=3;i>=1;i--){
+    if(guessNum<18){
+      guessNum=prompt('Your guess lower than my age'+' you still have '+i+ ' attempt');
+    }
+    else if (guessNum>30){
+      guessNum=prompt('Your guess higher than my age'+' you still have '+i+ ' attempt');
+    }
+
+    else if (guessNum>=25&&guessNum<=30 || guessNum<=23&&guessNum>=20){
+      guessNum=prompt('you are two close from the correct answer you still have '+ i +'attempt');
+    }
+    // eslint-disable-next-line no-cond-assign
+    else if (guessNum= myNum){alert('correct my age is '+ myNum + ' congratilation'+ whatName);
+      // eslint-disable-next-line no-unused-vars
+      guessCorrect=true;
+      // eslint-disable-next-line no-unused-vars
+      points += 5;
+      break;
+    }
+  }
+  if (guessNum !== myNum){
+    alert('You exceed the number of attempt my age if '+ myNum);
+  }
+}
+
+function guessCounrty(){
+  let choOsefromcoutry=['Amman','Krarak','Tafeleh','Maan','Jarash','Aqaba'];
+  let guessCounrty= prompt(question[1]);
+  let correct= false;
+
+  for(let i=6;i>0;i--){
+    for(let j=0; j<choOsefromcoutry.length;j++){
+      if(guessCounrty.toLowerCase()===choOsefromcoutry[j].toLowerCase()){
+        correct=true;
+      }
+    }
+    if(correct){
+      points=+5;
+      alert('That correct '+whatName+ 'good job');
+      break;
+    }
+    else{
+      guessCounrty = prompt ('This wrong answer you still have '+ i+ ' attempt');
+    }
+  }
+  if (correct===false) {
+    alert('You exceed the number of attempt the true answer are:' +choOsefromcoutry);
+  }
+}
+
+function finalResult(){
+  alert (whatName+ 'your score is ' + points);
+}
