@@ -1,5 +1,17 @@
 # project-directory
 
+## navigator: Baraa Al-Osaily
+
+## driver: Osama Khader
+
+today I worked with my partner Baraa Al-Osaily to:
+
+- fix some errors
+- adding function for the codes
+- add a new function to show the result of the 6th & 7th qustion
+
+---
+
 I will summarize what we take today by using the following points:
 
 1. To day i am overed thinking to reach to this results
