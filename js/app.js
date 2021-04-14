@@ -95,10 +95,10 @@ guessCounrty();
 finalResult();
 
 function guessNumber(){
-  const myNum=24;
-  let guessCorrect=false;
+  let myNum=24;
+  let guesscorrect = false;
   let guessNum=prompt(question[0]);
-  for(let i=3;i>=1;i--){
+  for(let i=3;i>=0;i--){
     if(guessNum<18){
       guessNum=prompt('Your guess lower than my age'+' you still have '+i+ ' attempt');
     }
@@ -109,16 +109,14 @@ function guessNumber(){
     else if (guessNum>=25&&guessNum<=30 || guessNum<=23&&guessNum>=20){
       guessNum=prompt('you are two close from the correct answer you still have '+ i +'attempt');
     }
-    // eslint-disable-next-line no-cond-assign
-    else if (guessNum= myNum){alert('correct my age is '+ myNum + ' congratilation'+ whatName);
-      // eslint-disable-next-line no-unused-vars
-      guessCorrect=true;
-      // eslint-disable-next-line no-unused-vars
-      points += 5;
+    else if (guessNum==myNum){
+      alert('correct my age is '+ myNum + ' congratilation'+ whatName);
+      guesscorrect= true;
+      points+=5;
       break;
     }
   }
-  if (guessNum !== myNum){
+  if (guesscorrect==false){
     alert('You exceed the number of attempt my age if '+ myNum);
   }
 }
@@ -128,14 +126,14 @@ function guessCounrty(){
   let guessCounrty= prompt(question[1]);
   let correct= false;
 
-  for(let i=6;i>0;i--){
+  for(let i=5;i>0;i--){
     for(let j=0; j<choOsefromcoutry.length;j++){
       if(guessCounrty.toLowerCase()===choOsefromcoutry[j].toLowerCase()){
         correct=true;
       }
     }
     if(correct){
-      points=+5;
+      points+=5;
       alert('That correct '+whatName+ 'good job');
       break;
     }
