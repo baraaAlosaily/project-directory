@@ -2,10 +2,10 @@
 'use strict';
 
 let points=0;
-alert('Welcome to My Wesite');
-// console.log('Welcome to My Wesite');
+alert('Welcome to My Website');
+// console.log('Welcome to My Website');
 
-let whatName = prompt('Let us know you name');
+let whatName = prompt('Let us know your name');
 alert('welcome Greeting Mr./Ms. ' + whatName);
 // console.log('welcome Greeting Mr./Ms. ' + whatName);
 
@@ -109,14 +109,14 @@ function guessNumber(){
     else if (guessNum>=25&&guessNum<=30 || guessNum<=23&&guessNum>=20){
       guessNum=prompt('you are two close from the correct answer you still have '+ i +'attempt');
     }
-    else if (guessNum==myNum){
+    else if (guessNum===myNum){
       alert('correct my age is '+ myNum + ' congratilation'+ whatName);
       guesscorrect= true;
       points+=5;
       break;
     }
   }
-  if (guesscorrect==false){
+  if (guesscorrect===false){
     alert('You exceed the number of attempt my age if '+ myNum);
   }
 }
@@ -149,3 +149,9 @@ function guessCounrty(){
 function finalResult(){
   alert (whatName+ 'your score is ' + points);
 }
+
+// eslint-disable-next-line no-unused-vars
+function finalAnswer(){
+  alert('my age is 24 ' + 'and the main countrey is amman');
+}
+finalAnswer();
