@@ -70,30 +70,51 @@ img {
   box-sizing: inherit;
   height: 150px;
   line-height: 25px;
+  background-image: url("https://media.gettyimages.com/photos/ripping-right-past-the-password-picture-id1138004673?k=6&m=1138004673&s=612x612&w=0&h=zm4v53alGb7a9fGG8YM2uRhslhHvaJqsh0E9XzMQqJE=");
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.5s;
+}
+.learn:hover {
+  transform: translateY(10px);
+}
+.understand:hover {
+  transform: translateY(10px);
+}
+.work:hover {
+  transform: translateY(10px);
 }
 
 .understand {
   width: 20%;
   position: relative;
   left: 25%;
-  background-color: rgb(0, 0, 0);
   padding: 20px 20px 90px;
   border-radius: 10px;
-  color: white;
   height: 150px;
   line-height: 25px;
+  background-image: url("https://media.gettyimages.com/photos/girl-learning-to-code-on-a-next-generation-tablet-picture-id567157641?k=6&m=567157641&s=612x612&w=0&h=XC3LsrsQzVrFImUjRRcR3j-rMeL4My35OpZe0pZluOw=");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: transform 0.5s;
 }
 
 .work {
   width: 20%;
   position: relative;
   left: 30%;
-  background-color: rgb(85, 85, 85);
   padding: 20px 20px 90px;
   border-radius: 10px;
-  color: lightskyblue;
+  color: rgb(255, 255, 255);
   height: 150px;
   line-height: 23px;
+  background-image: url("https://media.gettyimages.com/photos/computer-code-writer-picture-id817097532?k=6&m=817097532&s=612x612&w=0&h=ZH9Ic_Slnom3q2vacKBqiXB0I0nS_g6MIayCDLOHN3w=");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: transform 0.5s;
 }
 
 footer {
@@ -152,7 +173,9 @@ h2 {
 .top ol li {
   display: inline;
   padding: 20px;
-  text-decoration: dotted;
+}
+.top ol li:hover {
+  background-color: lightgray;
 }
 .top p {
   padding-top: 20px;

@@ -1,95 +1,94 @@
-/* eslint-disable no-constant-condition */
+
 'use strict';
 
-let points=0;
+let userScore=0;
 alert('Welcome to My Wesite');
-// console.log('Welcome to My Wesite');
-
-let whatName = prompt('Let us know you name');
-alert('welcome Greeting Mr./Ms. ' + whatName);
-// console.log('welcome Greeting Mr./Ms. ' + whatName);
 
 
-function answer1() {
-  let sport = prompt('Did you like sport?','Please enter YES or NO').toLowerCase();
-  if (sport=== 'yes'||sport==='y') {
-    alert('Yes, Thats Great keep going');
-    // console.log('Ye Thats Great keep going');
-  } else if (sport=== 'no'||sport==='n') {
-    alert('No, You have to choose at lease one kind of sport to practice every day');
-    // console.log('No, so You have to choose at lease one kind of sport to practice every day');
+let userName = prompt('What\'s your name ?');
+alert('Welcome Mr./Ms. ' + userName);
+
+
+
+function theSportquestion() {
+  let sportQuestion = prompt('Do you like play football?','Please enter yes or no').toLowerCase();
+  if (sportQuestion=== 'yes'||sportQuestion==='y') {
+    alert('Keep going, it is so funny game');
+
+  } else if (sportQuestion=== 'no'||sportQuestion==='n') {
+    alert('You have to try it is funny');
+
   }
   else {
-    alert('please enter yes or no');
+    alert('Please Enter Yes or No/ Y or N');
   }
 }
-answer1();
+theSportquestion();
 
-function answer2() {
-  let manSaf = prompt('Did you like Mansaf?','yes or no. y or no').toLowerCase();
-  if (manSaf === 'yes'||manSaf==='y') {
+function theJordianianFood() {
+  let jordanianFood = prompt('Did you like jordanianFood?','Yes or No').toLowerCase();
+  if (jordanianFood === 'yes'| jordanianFood==='y') {
     alert('Yes, so You are original Jordanian');
-    // console.log('Yes, so You are original Jordanian');
-  }else if (manSaf==='no'||manSaf==='n') {
-    alert('No, so you have to try it is so delicios','yes or no. y or no');
-    // console.log('No, so you have to try it is so delicios');
+
+  }else if (jordanianFood==='no'| jordanianFood==='n') {
+    alert('No, so you have to try them is so delicios','Yes or No');
+
   }
   else{
-    alert('please enter yes or no');
+    alert('Please Enter Yes or No/ Y or N');
   }
 }
-answer2();
+theJordianianFood();
 
-function answer3() {
-  let coDing = prompt('Did you like coding?','yes or no. y or no').toLowerCase();
-  if (coDing === 'yes'||coDing==='y') {
+function theStudyCoding() {
+  let studCoding = prompt('Did you like software field?','Yes or No').toLowerCase();
+  if (studCoding === 'yes'|| studCoding==='y') {
     alert('Yes, so Great and i do');
-    // console.log('Yes, so Great and i do');
-  } else if (coDing==='no',coDing==='n') {
+
+  } else if (studCoding==='no'|| studCoding==='n') {
     alert('No, so You have to to Ask about ASAC collage they teach coding very well');
-    // console.log('No, so You have to to Ask about ASAC collage they teach coding very well');
+
   }
   else{
-    alert('please enter yes or no');
+    alert('Please Enter Yes or No/ Y or N');
   }
-}
-answer3();
+} theStudyCoding();
 
-function answer4() {
-  let reaDing = prompt('Did you like reading books?','yes or no. y or no').toLowerCase();
-  if (reaDing === 'yes'||reaDing==='y') {
+function theReadingQuestion() {
+  let readingQuestion = prompt('Did you like reading books?','Yes or No').toLowerCase();
+  if (readingQuestion === 'yes'||readingQuestion==='y') {
     alert('Yes, so Thats Great keep going');
-    // console.log('Yes, so Thats Great keep going');
-  } else if(reaDing==='no',reaDing==='n') {
+
+  } else if(readingQuestion==='no',readingQuestion==='n') {
     alert('No, so You have to read because readers are a leader');
-    // console.log('No, so You have to read because readers are a leader');
+
   }
   else{
-    alert('please enter yes or no');
+    alert('Please Enter Yes or No/ Y or N');
   }
 }
-answer4();
+theReadingQuestion();
 
-function answer5() {
-  let coFfee = prompt('Did you like drink coffee?','yes or no. y or no').toLowerCase();
-  if (coFfee === 'yes'||coFfee==='y') {
+function theCoffeeQuestion() {
+  let coffeeQuestion = prompt('Did you like drink coffeeQuestion?','yes or no').toLowerCase();
+  if (coffeeQuestion === 'yes'||coffeeQuestion==='y') {
     alert('Yes, so I think i is not good but i do to wakeup');
-    // console.log('Yes, so I think i is not good but i do to wakeup');
-  } else if (coFfee=== 'no'||coFfee==='n') {
+
+  } else if (coffeeQuestion=== 'no'||coffeeQuestion==='n') {
     alert('No, so Good, i feeling jealous from you');
-    // console.log('No, so Good, i feeling jealous from you');
+
   }
   else{
-    alert('please enter yes or no');
+    alert('Please Enter Yes or No/ Y or N');
   }
 }
-answer5();
+theCoffeeQuestion();
 
 
 
 
 
-let question= ['Ok' + whatName +'lets play guess game guess my age', 'Ok'+whatName+'let us play another game guess the main country in Jordan '];
+let question= ['Ok' + userName +'lets play guess game guess my age', 'Ok'+userName+'let us play another game guess the main country in Jordan '];
 guessNumber();
 guessCounrty();
 finalResult();
@@ -109,13 +108,17 @@ function guessNumber(){
     else if (guessNum>=25&&guessNum<=30 || guessNum<=23&&guessNum>=20){
       guessNum=prompt('you are two close from the correct answer you still have '+ i +'attempt');
     }
+
+    // eslint-disable-next-line eqeqeq
     else if (guessNum==myNum){
-      alert('correct my age is '+ myNum + ' congratilation'+ whatName);
+      alert('correct my age is '+ myNum + ' congratilation'+ userName);
       guesscorrect= true;
-      points+=5;
+      userScore+=5;
       break;
     }
   }
+
+  // eslint-disable-next-line eqeqeq
   if (guesscorrect==false){
     alert('You exceed the number of attempt my age if '+ myNum);
   }
@@ -133,8 +136,9 @@ function guessCounrty(){
       }
     }
     if(correct){
-      points+=5;
-      alert('That correct '+whatName+ 'good job');
+
+      userScore+=5;
+      alert('That correct '+userName+ 'good job');
       break;
     }
     else{
@@ -147,5 +151,5 @@ function guessCounrty(){
 }
 
 function finalResult(){
-  alert (whatName+ 'your score is ' + points);
+  alert (userName+ 'your score is ' + userScore);
 }
