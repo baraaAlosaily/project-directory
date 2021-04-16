@@ -1,4 +1,3 @@
-
 'use strict';
 
 let userScore=0;
@@ -6,8 +5,6 @@ alert('Welcome to My Wesite');
 
 let userName = prompt('What\'s your name ?');
 alert('Welcome Mr./Ms. ' + userName);
-
-
 
 function theSportquestion() {
   let sportQuestion = prompt('Do you like play football?','Please enter yes or no').toLowerCase();
