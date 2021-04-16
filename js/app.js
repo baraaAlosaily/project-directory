@@ -1,19 +1,8 @@
 
 'use strict';
 
-<<<<<<< HEAD
 let userScore=0;
 alert('Welcome to My Wesite');
-
-=======
-let points=0;
-alert('Welcome to My Website');
-// console.log('Welcome to My Website');
-
-let whatName = prompt('Let us know your name');
-alert('welcome Greeting Mr./Ms. ' + whatName);
-// console.log('welcome Greeting Mr./Ms. ' + whatName);
->>>>>>> 253bce96312465f64b50f21681026833d9b64984
 
 let userName = prompt('What\'s your name ?');
 alert('Welcome Mr./Ms. ' + userName);
@@ -95,9 +84,6 @@ function theCoffeeQuestion() {
 theCoffeeQuestion();
 
 
-
-
-
 let question= ['Ok' + userName +'lets play guess game guess my age', 'Ok'+userName+'let us play another game guess the main country in Jordan '];
 guessNumber();
 guessCounrty();
@@ -118,27 +104,18 @@ function guessNumber(){
     else if (guessNum>=25&&guessNum<=30 || guessNum<=23&&guessNum>=20){
       guessNum=prompt('you are two close from the correct answer you still have '+ i +'attempt');
     }
-<<<<<<< HEAD
-
     // eslint-disable-next-line eqeqeq
     else if (guessNum==myNum){
       alert('correct my age is '+ myNum + ' congratilation'+ userName);
-=======
-    else if (guessNum===myNum){
-      alert('correct my age is '+ myNum + ' congratilation'+ whatName);
->>>>>>> 253bce96312465f64b50f21681026833d9b64984
       guesscorrect= true;
       userScore+=5;
       break;
     }
   }
-<<<<<<< HEAD
+
 
   // eslint-disable-next-line eqeqeq
-  if (guesscorrect==false){
-=======
   if (guesscorrect===false){
->>>>>>> 253bce96312465f64b50f21681026833d9b64984
     alert('You exceed the number of attempt my age if '+ myNum);
   }
 }
